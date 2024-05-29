@@ -1,0 +1,53 @@
+.NotFounded {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--white-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--gray-color);
+}
+.NotFounded p {
+  position: relative;
+  letter-spacing: 1px;
+  padding: 0 10px;
+  font-size: 18px;
+  overflow: hidden;
+  width: fit-content;
+}
+.NotFounded p span {
+  position: relative;
+  display: flex;
+  animation-delay: 1s;
+}
+.NotFounded p:first-child span {
+  animation: fadeingLeft 0.7s ease-in-out alternate-reverse;
+}
+.NotFounded p:last-child span {
+  animation: fadeingRight 0.7s ease-in-out alternate-reverse;
+}
+.NotFounded > span {
+  position: relative;
+  animation: spinning 0.5s ease-in-out alternate-reverse;
+}
+
+@keyframes spinning {
+  to {
+    transform: rotate(380deg);
+  }
+}
+
+@keyframes fadeingLeft {
+  to {
+    transform: translateX(115%);
+    opacity: 1;
+  }
+}
+@keyframes fadeingRight {
+  to {
+    transform: translateX(-115%);
+    opacity: 1;
+  }
+}

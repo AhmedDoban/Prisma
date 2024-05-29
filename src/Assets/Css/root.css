@@ -1,0 +1,16 @@
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Root
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+:root {
+  --main-transition: all 0.7s ease-in-out;
+  --main-border-radius: 1.5rem;
+  --main-padding-top: 50px;
+  --main-padding-bottom: 50px;
+  --dark-color: #202022;
+  --blue-color: #7678ed;
+  --blue-alt-color: #dbdcff;
+  --red-color: #ff7a55;
+  --white-color: #f9fafc;
+  --white-alt-color: #f1f1ff;
+  --gray-color: #898787;
+}

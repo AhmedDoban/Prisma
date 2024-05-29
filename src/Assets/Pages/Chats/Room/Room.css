@@ -1,0 +1,29 @@
+.Room {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+@media (max-width: 992px) {
+  .Room {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--white-color);
+  }
+}
+.Room .chatBody {
+  position: relative;
+  background-color: var(--white-color);
+  height: 100%;
+  align-self: center;
+  padding: 20px;
+  width: 100%;
+  border-top-right-radius: var(--main-border-radius);
+  border-bottom-right-radius: var(--main-border-radius);
+}
+@media (max-width: 1200px) {
+  .Room .chatBody {
+    border-radius: 0;
+  }
+}

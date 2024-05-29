@@ -1,0 +1,56 @@
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# head chat
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.head-chat {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  height: 80px;
+}
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# head chat
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.head-chat .user {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.head-chat .user h1 {
+  font-size: 25px;
+  font-weight: normal;
+  transition: var(--main-transition);
+}
+.head-chat .user p {
+  position: relative;
+  font-size: 14px;
+  transition: var(--main-transition);
+}
+.head-chat .actions {
+  position: relative;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.head-chat .actions button {
+  border: 0;
+  background-color: transparent;
+  font-size: 25px;
+  cursor: pointer;
+  color: var(--gray-color);
+  transition: var(--main-transition);
+}
+@media (max-width: 772px) {
+  .head-chat .user h1 {
+    font-size: 18px;
+    font-weight: normal;
+  }
+  .head-chat .user p {
+    font-size: 11px;
+  }
+  .head-chat .actions button {
+    font-size: 20px;
+  }
+}

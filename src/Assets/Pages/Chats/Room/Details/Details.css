@@ -1,0 +1,156 @@
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Chat Details
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.ChatDetails {
+  position: relative;
+  width: 270px;
+  min-width: 270px;
+  height: 100%;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 10px;
+}
+.ChatDetails.active {
+  display: none;
+}
+.ChatDetails .BackBtm {
+  position: absolute;
+  top: 30px;
+  left: 10px;
+  z-index: 9;
+  cursor: pointer;
+  display: none;
+}
+@media (max-width: 1200px) {
+  .ChatDetails {
+    position: relative;
+    display: none;
+  }
+  .ChatDetails {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 10px;
+  }
+  .ChatDetails .BackBtm {
+    display: flex;
+  }
+}
+
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Chat Details  Main card 
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.ChatDetails .card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: var(--white-color);
+  border-radius: var(--main-border-radius);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Chat Details  Main card  title
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.ChatDetails .card .title {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.ChatDetails .card .title h3 {
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--dark-color);
+}
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Chat Details  First Card
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.ChatDetails .card .box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.ChatDetails .card .box .box-head {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.ChatDetails .card .box .box-head .box-left {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.ChatDetails .card .box .dowpdown {
+  position: relative;
+  display: flex;
+  gap: 10px;
+  height: 50px;
+  overflow: hidden;
+  overflow-x: auto;
+}
+
+.ChatDetails .card .box .dowpdown img {
+  position: relative;
+  min-width: 80px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1em;
+}
+.ChatDetails .card .box .dowpdown::-webkit-scrollbar {
+  height: 0;
+}
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Chat Details  Second Card
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.ChatDetails .card.blue {
+  position: relative;
+  background-color: var(--blue-alt-color);
+  height: 45%;
+}
+.ChatDetails .card.blue .UserMember {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.ChatDetails .card.blue .UserMember::-webkit-scrollbar {
+  width: 0;
+}
+.ChatDetails .card.blue .UserMember .UserCard {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.ChatDetails .card.blue .UserMember .UserCard img {
+  width: 55px;
+  height: 55px;
+  border-radius: 0.5em;
+}
+.ChatDetails .card.blue .UserMember .UserCard p {
+  position: relative;
+  color: var(--dark-color);
+  font-weight: 600;
+  font-size: 14px;
+}
+.ChatDetails .card.blue .UserMember .UserCard span {
+  color: var(--blue-color);
+  font-size: 12px;
+}

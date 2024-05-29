@@ -1,0 +1,195 @@
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Chats
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.Chats {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: var(--main-transition);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+@media (max-width: 992px) {
+  .Chats {
+    height: 100vh;
+  }
+}
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Chats Left
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.Chats .left {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  width: 350px;
+  height: 100%;
+  background-color: var(--white-color);
+}
+.Chats .left .search-user {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 5px;
+  background-color: var(--blue-alt-color);
+  padding: 0 8px;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+
+.Chats .left .search-user label {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+.Chats .left .search-user input {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background-color: transparent;
+  padding: 8px 0;
+  transition: var(--main-transition);
+}
+.Chats .left .search-user input:focus {
+  outline: 0;
+}
+.Chats .left .search-user input:focus::placeholder {
+  opacity: 0;
+  transition: var(--main-transition);
+}
+.Chats .left .search-user input:focus + label {
+  color: var(--blue-color);
+  transform: scale(1.5);
+}
+/*ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+# Chats Left Users 
+ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*/
+.Chats .left .users {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+  padding: 0 10px 0 0;
+}
+.Chats .left .users .UserBox {
+  position: relative;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  transition: var(--main-transition);
+  border-radius: 0.5em;
+}
+.Chats .left .users .UserBox.active,
+.Chats .left .users .UserBox:hover {
+  background-color: var(--white-alt-color);
+}
+.Chats .left .users .UserData {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.Chats .left .users .UserData .avatar {
+  position: relative;
+  min-width: 55px;
+  width: 55px;
+  height: 55px;
+}
+.Chats .left .users .UserData .avatar img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5em;
+}
+.Chats .left .users .UserData .details {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  height: 100%;
+  width: 100%;
+}
+
+.Chats .left .users .UserData .details p {
+  font-size: 14px;
+  white-space: nowrap;
+  width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.Chats .left .users .UserData .details h4 {
+  font-size: 14px;
+  width: 100%;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+.Chats .left .users .UserBox .Time-action {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+}
+.Chats .left .users .UserBox .Time-action .delevered {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 5px;
+}
+.Chats .left .users .UserBox .Time-action .delevered span.active {
+  color: var(--blue-color);
+}
+.Chats .left .users .UserBox .Time-action .delevered p {
+  position: relative;
+  font-size: 12px;
+}
+.Chats .left .users .UserBox .Time-action .actions {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+}
+.Chats .left .users .UserBox .Time-action .actions .UnReaded {
+  position: relative;
+  font-size: 12px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--red-color);
+  transition: var(--main-transition);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.Chats .left .users .UserBox .Time-action .actions .Pinned {
+  position: relative;
+  color: var(--blue-color);
+}
+@media (max-width: 772px) {
+  .Chats .left {
+    width: 100%;
+  }
+}
